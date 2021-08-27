@@ -1,3 +1,5 @@
+package Lecture_5;
+
 import Driver.DriverExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

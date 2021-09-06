@@ -32,7 +32,7 @@ public class Task_6 extends DriverExecutor {
         driver.findElement(By.id("user-name")).sendKeys("standard_user", Keys.ENTER); // id
         driver.findElement(By.name("password")).sendKeys("secret_sauce", Keys.ENTER); // name
         driver.findElement(By.cssSelector(".submit-button.btn_action")).click(); // css.class
-        Assert.assertTrue(driver.findElement(By.cssSelector(".app_logo")).isDisplayed()); // classname
+        Assert.assertTrue(driver.findElement(By.className("app_logo")).isDisplayed()); // classname
         Assert.assertTrue(driver.findElement(By.cssSelector("[class|=title]")).isDisplayed()); // [attribute|=value]
         Assert.assertTrue(driver.findElement(By.xpath("//button/ancestor::div[@class='bm-burger-button']")).isDisplayed()); //	ancestor
         Assert.assertTrue(driver.findElement(By.xpath("(//div[@class='header_secondary_container']//descendant::span)[2]")).isDisplayed()); //	descendant

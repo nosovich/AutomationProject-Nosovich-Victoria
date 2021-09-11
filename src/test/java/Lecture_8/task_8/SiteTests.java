@@ -1,6 +1,6 @@
 package Lecture_8.task_8;
 
-import Driver.DriverExecutor;
+import Driver.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -11,11 +11,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import static org.testng.Assert.*;
 
-public class SiteTests extends DriverExecutor {
+public class SiteTests extends BaseTest {
 
     @BeforeTest
     public void preconditions() {

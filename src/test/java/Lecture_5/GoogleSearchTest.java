@@ -1,6 +1,6 @@
 package Lecture_5;
 
-import Driver.DriverExecutor;
+import Driver.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
 
-public class GoogleSearchTest extends DriverExecutor {
+public class GoogleSearchTest extends BaseTest {
 
     /**
      * Тест 1:

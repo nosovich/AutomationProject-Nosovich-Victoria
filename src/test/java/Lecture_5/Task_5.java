@@ -1,6 +1,6 @@
 package Lecture_5;
 
-import Driver.DriverExecutor;
+import Driver.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.testng.annotations.*;
 import java.util.Arrays;
 import java.util.List;
 
-public class Task_5 extends DriverExecutor {
+public class Task_5 extends BaseTest {
     /**
      * Написать 3 теста по сценарию ниже с различными данными и вариантами.
      * 1.	Открыть сайт https://masterskayapola.ru/kalkulyator/laminata.html

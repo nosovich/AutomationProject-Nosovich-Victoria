@@ -1,6 +1,7 @@
 package PageObject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 public class LoginPage extends BasePage {
@@ -8,6 +9,10 @@ public class LoginPage extends BasePage {
     private By password = By.cssSelector("#password");
     private By loginBtn = By.cssSelector("#login-button");
     private By errorText = By.cssSelector("[data-test=error]");
+
+    public LoginPage(WebDriver driver) {
+        super(driver);
+    }
 
     //pattern fluent chain of invocations
     // - метод возвращает ссылку на объект класса (возвращает сам себя).

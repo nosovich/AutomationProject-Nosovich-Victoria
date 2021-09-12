@@ -12,7 +12,7 @@ public class BaseTest {
 
     @BeforeTest
     public void setupDriver() {
-        driver = getDriver();
+        driver = driver();
     }
 
     @AfterTest

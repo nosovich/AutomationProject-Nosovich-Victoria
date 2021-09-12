@@ -1,7 +1,7 @@
 package PageObject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.html5.WebStorage;
 import org.testng.Assert;
@@ -9,42 +9,47 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-import static Driver.DriverCreation.getDriver;
+import static Driver.DriverCreation.driver;
 
 public class BasePage {
 
+    protected WebDriver driver;
+
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
     protected void enter(By element, CharSequence... charSequence) {
-        getDriver().findElement(element).clear();
-        getDriver().findElement(element).sendKeys(charSequence);
+        driver().findElement(element).clear();
+        driver().findElement(element).sendKeys(charSequence);
     }
 
     protected void click(By... elements) {
         for (By element : elements) {
-            getDriver().findElement(element).click();
+            driver().findElement(element).click();
         }
     }
 
     protected void open(String url) {
-        WebDriver driver = getDriver();
         driver.get(url);
         WebStorage webStorage = (WebStorage) driver;
         webStorage.getLocalStorage().clear();
     }
 
     protected String getElementText(By element) {
-        return getDriver().findElement(element).getText();
+        return driver().findElement(element).getText();
     }
 
     protected void isDisplayed(By... elements) {
         for(By element : elements) {
-            Assert.assertTrue(getDriver().findElement(element).isDisplayed(), "Element :: " + element + " is not exist.");
+            Assert.assertTrue(driver().findElement(element).isDisplayed(), "Element :: " + element + " is not exist.");
         }
     }
 
     protected boolean notExist(By... elements) {
         boolean elementExist = true;
         for(By element : elements) {
-            Assert.assertFalse(getDriver().findElement(element).isDisplayed());
+            Assert.assertFalse(driver().findElement(element).isDisplayed());
             if(!elementExist) {
                 elementExist = false;
             }

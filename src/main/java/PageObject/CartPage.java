@@ -1,11 +1,8 @@
 package PageObject;
-import static Driver.DriverCreation.getDriver;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.WebDriver;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,9 +12,12 @@ public class CartPage extends BasePage {
     private By removeBtn = By.xpath("//button[contains(text(),'Remove')]");
     private By checkoutBtn = By.id("checkout");
 
+    public CartPage(WebDriver driver) {
+        super(driver);
+    }
 
     public CartPage checkProduct() {
-        checkProdDescription(expectedDescription,prodNameInCart,prodPriceInCart);
+        checkProdDescription(expectedDescription, prodNameInCart, prodPriceInCart);
         return this;
     }
 

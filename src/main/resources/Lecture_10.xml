@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lecture 10">
+    <test name="First test" enabled="false">
+        <groups>
+            <run>
+                <include name="Before Group"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Lecture_10.Lecture_10_1"></class>
+        </classes>
+    </test>
+    <test name="Second test" enabled="false">
+        <classes>
+            <class name="Lecture_10.Lecture_10_2"></class>
+        </classes>
+    </test>
+    <test name="Third test">
+        <parameter name="username" value="locked_out_user"></parameter>
+        <parameter name="password" value="secret_sauce"></parameter>
+        <classes>
+            <class name="Lecture_10.Lecture_10_3"></class>
+        </classes>
+    </test>
+</suite>
+

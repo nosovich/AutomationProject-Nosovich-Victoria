@@ -4,17 +4,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.concurrent.TimeUnit;
+
 public class DriverCreation {
 
-    private static WebDriver driver;
+//  Класс Threadlocal используем для избежания переплетения потоков.
+//  Переменная типа Tthreadlocal хранит переменные, которые должны быть доступны для текущего запущенного потока.
+//  На примере драйвера нам надо, чтобы создавался новый дравер в каждом новом потоке.
 
-    public static WebDriver driver() {
-        if (driver == null) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--lang=ru"); // Так как польлзуюсь google из Польши меняю язык на русский в Настройках google.
-            driver = new ChromeDriver(options);
-            driver.manage().window().maximize();
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+//   Singleton pattern
+    public static WebDriver getDriver() {
+        if (driver.get() == null) {
+            WebDriver webDriver = new ChromeDriver();
+            webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            webDriver.manage().window().maximize();
+            driver.set(webDriver);
         }
-        return driver;
+        return driver.get();
+    }
+
+    public static void quitDriver() {
+        if (driver.get() != null) {
+            driver.get().close();
+            driver.get().quit();
+            driver.remove();
+        }
     }
 }

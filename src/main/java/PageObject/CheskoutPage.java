@@ -9,10 +9,6 @@ public class CheskoutPage extends BasePage {
     private By zip = By.id("postal-code");
     private By continueBtn = By.id("continue");
 
-    public CheskoutPage(WebDriver driver) {
-        super(driver);
-    }
-
     public CheskoutPage makePayment(String firstname, String lastname, String zipcode) {
         enter(this.firstName, firstname);
         enter(this.lastName, lastname);

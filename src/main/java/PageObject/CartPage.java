@@ -12,10 +12,6 @@ public class CartPage extends BasePage {
     private By removeBtn = By.xpath("//button[contains(text(),'Remove')]");
     private By checkoutBtn = By.id("checkout");
 
-    public CartPage(WebDriver driver) {
-        super(driver);
-    }
-
     public CartPage checkProduct() {
         checkProdDescription(expectedDescription, prodNameInCart, prodPriceInCart);
         return this;

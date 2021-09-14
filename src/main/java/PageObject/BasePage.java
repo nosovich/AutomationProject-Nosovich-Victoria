@@ -9,47 +9,43 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-import static Driver.DriverCreation.driver;
+import static Driver.DriverCreation.getDriver;
 
 public class BasePage {
 
-    protected WebDriver driver;
-
-    public BasePage(WebDriver driver) {
-        this.driver = driver;
-    }
+//    protected WebDriver driver;
 
     protected void enter(By element, CharSequence... charSequence) {
-        driver().findElement(element).clear();
-        driver().findElement(element).sendKeys(charSequence);
+        getDriver().findElement(element).clear();
+        getDriver().findElement(element).sendKeys(charSequence);
     }
 
     protected void click(By... elements) {
         for (By element : elements) {
-            driver().findElement(element).click();
+            getDriver().findElement(element).click();
         }
     }
 
     protected void open(String url) {
-        driver.get(url);
-        WebStorage webStorage = (WebStorage) driver;
-        webStorage.getLocalStorage().clear();
+        getDriver().get(url);
+//        WebStorage webStorage = (WebStorage) getDriver();
+//        webStorage.getLocalStorage().clear();
     }
 
     protected String getElementText(By element) {
-        return driver().findElement(element).getText();
+        return getDriver().findElement(element).getText();
     }
 
     protected void isDisplayed(By... elements) {
         for(By element : elements) {
-            Assert.assertTrue(driver().findElement(element).isDisplayed(), "Element :: " + element + " is not exist.");
+            Assert.assertTrue(getDriver().findElement(element).isDisplayed(), "Element :: " + element + " is not exist.");
         }
     }
 
     protected boolean notExist(By... elements) {
         boolean elementExist = true;
         for(By element : elements) {
-            Assert.assertFalse(driver().findElement(element).isDisplayed());
+            Assert.assertFalse(getDriver().findElement(element).isDisplayed());
             if(!elementExist) {
                 elementExist = false;
             }

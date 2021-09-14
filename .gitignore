@@ -24,4 +24,4 @@ hs_err_pid*
 
 .idea
 chromedriver_win32.zip
-.target
+/target

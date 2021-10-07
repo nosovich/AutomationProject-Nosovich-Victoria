@@ -1,6 +1,6 @@
-package Lecture_7.Lecture_6;
+package Lecture_7;
 
-import Driver.DriverExecutor;
+import Driver.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Task_6 extends DriverExecutor {
+public class Task_6 extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {

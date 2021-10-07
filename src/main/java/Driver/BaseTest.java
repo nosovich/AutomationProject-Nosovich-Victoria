@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeTest;
 
 import static Driver.DriverCreation.*;
 
-public class DriverExecutor {
+public class BaseTest {
 
     public static WebDriver driver;
 
     @BeforeTest
     public void setupDriver() {
-        driver = getDriver();
+        driver = driver();
     }
 
     @AfterTest

@@ -1,0 +1,65 @@
+body {
+    background-color: bisque;
+    font-family: tahoma;
+}
+#title {
+    color: crimson;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+#hotel_chain {
+    font-family: Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+#username, #pwd {
+    border: 2px solid powderblue;
+    font-size: 150%;
+}
+#logIn_btn {
+    color: aliceblue;
+    font-weight: bold;
+    border: 2px solid crimson;
+    background: crimson;
+    font-size: 150%
+}
+
+[name="cities"] {
+    font-family: Verdana;
+    font-size: 130%;
+    margin: 10px 10px 10px;
+}
+
+.pets_kind {
+    font-family: Tahoma, sans-serif;
+    font-style: italic;
+    border-collapse: collapse;
+    margin: 10px 10px 10px;
+    font-size: 130%;
+}
+
+#inform_table {
+    font-family: Tahoma, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin: 10px 10px 10px;
+}
+
+th {
+    border: 1px solid brown;
+    text-align: center;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid brown;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: powderblue;
+}

@@ -8,7 +8,7 @@ public class DriverCreation {
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver() {
+    public static WebDriver driver() {
         if (driver == null) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--lang=ru"); // Так как польлзуюсь google из Польши меняю язык на русский в Настройках google.

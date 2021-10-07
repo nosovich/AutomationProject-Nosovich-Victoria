@@ -23,5 +23,6 @@
 hs_err_pid*
 
 .idea
-chromedriver_win32.zip
+chromedriver.exe
+chromedriver94.04.exe
 /target

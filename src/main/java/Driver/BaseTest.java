@@ -19,5 +19,6 @@ public class BaseTest {
 
     @AfterMethod
     public void closeDriver() { quitDriver();}
+
 }
 

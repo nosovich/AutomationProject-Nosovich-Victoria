@@ -30,13 +30,13 @@ public class Lecture_10_3 extends BaseTest {
 
 
 //  Специально зафейленный тест (сейчас enabled)
-    @Parameters({"username", "password"})
-    @Test(priority = 2, retryAnalyzer = Retry.class, enabled = false)
-    public void loginToApplicationLocked_Test(@Optional("standard_user") String username, @Optional("secret_sauce") String password) {
-        loginPage.verifyLoginPage()
-                .loginToApplication(username, password);
-        productPage.verifyProductPage();
-    }
+//    @Parameters({"username", "password"})
+//    @Test(priority = 2, retryAnalyzer = Retry.class, enabled = false)
+//    public void loginToApplicationLocked_Test(@Optional("standard_user") String username, @Optional("secret_sauce") String password) {
+//        loginPage.verifyLoginPage()
+//                .loginToApplication(username, password);
+//        productPage.verifyProductPage();
+//    }
 
     @Parameters({"username", "password", "error"})
     @Test(priority = 1)

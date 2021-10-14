@@ -1,0 +1,81 @@
+[ {
+  "uid" : "c94a6ec1dbddc6d3",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634222689497,
+    "stop" : 1634222689970,
+    "duration" : 473
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f222cd50918a836",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634222691495,
+    "stop" : 1634222691929,
+    "duration" : 434
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63dd56d602cfaae7",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634222688556,
+    "stop" : 1634222689403,
+    "duration" : 847
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9ce4ecc3eb29a07",
+  "name" : "addAndRemoveProdToCart_Test",
+  "time" : {
+    "start" : 1634222701065,
+    "stop" : 1634222701488,
+    "duration" : 423
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fa421a378060f71",
+  "name" : "filter_Test",
+  "time" : {
+    "start" : 1634222694831,
+    "stop" : 1634222696193,
+    "duration" : 1362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac33de9f88d7451f",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634222690518,
+    "stop" : 1634222690966,
+    "duration" : 448
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc9d961150b0988f",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634222690028,
+    "stop" : 1634222690470,
+    "duration" : 442
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "475d53d75c0521c3",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634222691014,
+    "stop" : 1634222691448,
+    "duration" : 434
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

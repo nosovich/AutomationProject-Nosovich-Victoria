@@ -1,0 +1,124 @@
+{
+  "uid" : "63dd56d602cfaae7",
+  "name" : "loginToApplication_Test",
+  "fullName" : "Task_10.Task_10_LoginTests.loginToApplication_Test",
+  "historyId" : "84be39e196025c83aed5fc88e4c61fd8",
+  "time" : {
+    "start" : 1634222688556,
+    "stop" : 1634222689403,
+    "duration" : 847
+  },
+  "description" : "Login to application test",
+  "descriptionHtml" : "<p>Login to application test</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "preconditions",
+    "time" : {
+      "start" : 1634222687886,
+      "stop" : 1634222688351,
+      "duration" : 465
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "setupDriver",
+    "time" : {
+      "start" : 1634222685133,
+      "stop" : 1634222687839,
+      "duration" : 2706
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "closeDriver",
+    "time" : {
+      "start" : 1634222691934,
+      "stop" : 1634222692583,
+      "duration" : 649
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Task_10.Task_10_LoginTests"
+  }, {
+    "name" : "testClass",
+    "value" : "Task_10.Task_10_LoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginToApplication_Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Task 10"
+  }, {
+    "name" : "suite",
+    "value" : "Login tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "Task_10.Task_10_LoginTests"
+  }, {
+    "name" : "host",
+    "value" : "AWESOMEPC"
+  }, {
+    "name" : "thread",
+    "value" : "1584@AWESOMEPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "standard_user"
+  }, {
+    "name" : "arg1",
+    "value" : "secret_sauce"
+  }, {
+    "name" : "arg2",
+    "value" : ""
+  } ],
+  "links" : [ {
+    "name" : "https://www.saucedemo.com/",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63dd56d602cfaae7.json",
+  "parameterValues" : [ "standard_user", "secret_sauce", "" ]
+}

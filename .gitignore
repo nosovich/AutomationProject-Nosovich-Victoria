@@ -26,3 +26,4 @@ hs_err_pid*
 chromedriver.exe
 chromedriver94.04.exe
 /target
+/results

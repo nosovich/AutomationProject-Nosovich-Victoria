@@ -8,6 +8,7 @@ import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static Driver.DriverCreation.getDriver;
 
@@ -60,4 +61,5 @@ public class BasePage {
         }
         Assert.assertEquals(expectedDescription, prodDescription);
     }
+
 }

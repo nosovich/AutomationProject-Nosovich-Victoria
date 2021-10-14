@@ -12,12 +12,12 @@ public class BaseTest {
 
     public static WebDriver driver;
 
-    @BeforeMethod
+    @BeforeTest
     public void setupDriver() {
         driver = getDriver();
     }
 
-    @AfterMethod
+    @AfterTest
     public void closeDriver() { quitDriver();}
 
 }

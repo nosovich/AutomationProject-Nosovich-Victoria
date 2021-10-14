@@ -2,6 +2,7 @@ package PageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,6 +12,7 @@ public class CartPage extends BasePage {
     private By prodPriceInCart = By.className("inventory_item_price");
     private By removeBtn = By.xpath("//button[contains(text(),'Remove')]");
     private By checkoutBtn = By.id("checkout");
+    private By coontinueShoppingBtn = By.id("continue-shopping");
 
     public CartPage checkProduct() {
         checkProdDescription(expectedDescription, prodNameInCart, prodPriceInCart);
@@ -28,4 +30,10 @@ public class CartPage extends BasePage {
     }
 
     List<String> expectedDescription = Arrays.asList("Sauce Labs Backpack", "$29.99");
+
+
+    public void navigateToProductPage() {
+        click(coontinueShoppingBtn);
+    }
 }
+

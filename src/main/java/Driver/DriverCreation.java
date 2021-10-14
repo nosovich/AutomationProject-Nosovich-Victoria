@@ -18,7 +18,7 @@ public class DriverCreation {
     public static WebDriver getDriver() {
         if (driver.get() == null) {
             WebDriver webDriver = new ChromeDriver();
-            webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             webDriver.manage().window().maximize();
             driver.set(webDriver);
         }

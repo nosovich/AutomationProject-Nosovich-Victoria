@@ -29,6 +29,10 @@ public class CartPage extends BasePage {
         click(checkoutBtn);
     }
 
+    public List<String> getProductsList() {
+        return getItemList(prodNameInCart);
+    }
+
     List<String> expectedDescription = Arrays.asList("Sauce Labs Backpack", "$29.99");
 
 

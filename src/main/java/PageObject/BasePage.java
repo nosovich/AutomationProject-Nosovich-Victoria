@@ -1,8 +1,10 @@
 package PageObject;
 
+import PageObject.Product.ProductPage;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.html5.WebStorage;
 import org.testng.Assert;
 
@@ -27,6 +29,15 @@ public class BasePage {
         }
     }
 
+    protected void clickAll(By... elements) {
+        for (By element : elements) {
+            List<WebElement> buttons = getDriver().findElements(element);
+            for (WebElement button: buttons) {
+                button.click();
+            }
+        }
+    }
+
     protected void open(String url) {
         getDriver().get(url);
 //        WebStorage webStorage = (WebStorage) getDriver();
@@ -35,6 +46,11 @@ public class BasePage {
 
     protected String getElementText(By element) {
         return getDriver().findElement(element).getText();
+    }
+
+    protected List<String> getItemList(By elements) {
+        List<String> itemList = getDriver().findElements(elements).stream().map(data -> data.getText()).sorted().collect(Collectors.toList());
+        return itemList;
     }
 
     protected void isDisplayed(By... elements) {

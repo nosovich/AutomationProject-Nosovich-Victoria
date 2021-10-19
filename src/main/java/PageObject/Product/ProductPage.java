@@ -15,6 +15,7 @@ public class ProductPage extends BasePage {
     private By title = By.cssSelector(".title");
     private By logo = By.cssSelector(".app_logo");
     private By filterBtn = By.tagName("select");
+    private By addToCartBtn = By.cssSelector("[id|=add-to-cart]");
     private By backpackAddBtn = By.id("add-to-cart-sauce-labs-backpack");
     private By cartIcon = By.className("shopping_cart_link");
     private By products = By.className("inventory_item_name");
@@ -30,9 +31,19 @@ public class ProductPage extends BasePage {
         click(cartIcon);
     }
 
-    public ProductPage addProductToCart() {
+    public ProductPage addBackpackToCart() {
         click(backpackAddBtn);
         return this;
+    }
+
+    public ProductPage addProductsToCart()
+    {
+        clickAll(addToCartBtn);
+        return this;
+    }
+
+    public List<String> getProductsList() {
+        return getItemList(products);
     }
 
     public ProductPage clickProductSortContainer() {

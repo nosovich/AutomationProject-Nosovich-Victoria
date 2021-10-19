@@ -30,7 +30,6 @@ public class Task_10_LoginTests extends BaseTest {
                 {"locked_out_user", "secret_sauce", "Epic sadface: Sorry, this user has been locked out."},
                 {"12345", "secret_sauce", "Epic sadface: Username and password do not match any user in this service"},
                 {"standard_user", "12345", "Epic sadface: Username and password do not match any user in this service"}
-
         };
     }
 
@@ -46,5 +45,4 @@ public class Task_10_LoginTests extends BaseTest {
             loginPage.checkErrorText(error);
         }
     }
-
 }

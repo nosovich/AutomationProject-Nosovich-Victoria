@@ -48,7 +48,7 @@ public class Lecture_9 extends BaseTest {
     @Test(priority = 4)
     public void addProductToCart_Test() {
         loginPage.loginToApplication("standard_user", "secret_sauce");
-        productPage.addProductToCart()
+        productPage.addBackpackToCart()
                 .navigateToCartPage();
         cartPage.checkProduct();
     }
@@ -56,7 +56,7 @@ public class Lecture_9 extends BaseTest {
     @Test(priority = 5)
     public void removeProduct_Test() {
         loginPage.loginToApplication("standard_user", "secret_sauce");
-        productPage.addProductToCart()
+        productPage.addBackpackToCart()
                 .navigateToCartPage();
         cartPage.removeProduct();
     }
@@ -64,7 +64,7 @@ public class Lecture_9 extends BaseTest {
     @Test(priority = 6)
     public void payment_Test() {
         loginPage.loginToApplication("standard_user", "secret_sauce");
-        productPage.addProductToCart()
+        productPage.addBackpackToCart()
                 .navigateToCartPage();
         cartPage.navigateToCheckoutPage();
         cheskoutPage.makePayment("Vika", "Nos", "12345");

@@ -1,80 +1,80 @@
 [ {
-  "uid" : "fc9d961150b0988f",
+  "uid" : "d215fbfdefe9c52c",
   "name" : "loginToApplication_Test",
   "time" : {
-    "start" : 1634222690028,
-    "stop" : 1634222690470,
-    "duration" : 442
+    "start" : 1634649768440,
+    "stop" : 1634649768951,
+    "duration" : 511
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "63dd56d602cfaae7",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1634222688556,
-    "stop" : 1634222689403,
-    "duration" : 847
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8fa421a378060f71",
-  "name" : "filter_Test",
-  "time" : {
-    "start" : 1634222694831,
-    "stop" : 1634222696193,
-    "duration" : 1362
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1f222cd50918a836",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1634222691495,
-    "stop" : 1634222691929,
-    "duration" : 434
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c94a6ec1dbddc6d3",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1634222689497,
-    "stop" : 1634222689970,
-    "duration" : 473
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "475d53d75c0521c3",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1634222691014,
-    "stop" : 1634222691448,
-    "duration" : 434
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b9ce4ecc3eb29a07",
+  "uid" : "be2c3b2285f41f35",
   "name" : "addAndRemoveProdToCart_Test",
   "time" : {
-    "start" : 1634222701065,
-    "stop" : 1634222701488,
-    "duration" : 423
+    "start" : 1634649780145,
+    "stop" : 1634649780704,
+    "duration" : 559
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ac33de9f88d7451f",
+  "uid" : "6c75071cd5d4610b",
+  "name" : "filter_Test",
+  "time" : {
+    "start" : 1634649773170,
+    "stop" : 1634649774599,
+    "duration" : 1429
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd1871e8b8380db2",
   "name" : "loginToApplication_Test",
   "time" : {
-    "start" : 1634222690518,
-    "stop" : 1634222690966,
-    "duration" : 448
+    "start" : 1634649767888,
+    "stop" : 1634649768386,
+    "duration" : 498
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2fea3ad14195d756",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634649769559,
+    "stop" : 1634649769993,
+    "duration" : 434
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b4888f234faf915",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634649767349,
+    "stop" : 1634649767825,
+    "duration" : 476
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4b414cb179de1f2",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634649769041,
+    "stop" : 1634649769513,
+    "duration" : 472
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71037b24599a920f",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1634649766323,
+    "stop" : 1634649767265,
+    "duration" : 942
   },
   "status" : "passed",
   "severity" : "normal"

@@ -11,7 +11,7 @@
             <class name="Task_10.Task_10_FilterTests"></class>
         </classes>
     </test>
-    <test name="Adding / removing items to cart test">
+    <test name="Adding and removing items to cart test">
         <classes>
             <class name="Task_10.Task_10_CartTests"></class>
         </classes>

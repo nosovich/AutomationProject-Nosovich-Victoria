@@ -2,6 +2,7 @@ package PageObject.Product;
 
 import PageObject.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import java.util.Collections;
@@ -21,6 +22,10 @@ public class ProductPage extends BasePage {
     private By products = By.className("inventory_item_name");
     private By productPrices = By.className("inventory_item_price");
     private By productSortContainer = By.className("product_sort_container");
+
+    public ProductPage(WebDriver driver) {
+        super(driver);
+    }
 
     public ProductPage verifyProductPage() {
         isDisplayed(title, logo, filterBtn);

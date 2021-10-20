@@ -14,6 +14,10 @@ public class CartPage extends BasePage {
     private By checkoutBtn = By.id("checkout");
     private By coontinueShoppingBtn = By.id("continue-shopping");
 
+    public CartPage(WebDriver driver) {
+        super(driver);
+    }
+
     public CartPage checkProduct() {
         checkProdDescription(expectedDescription, prodNameInCart, prodPriceInCart);
         return this;

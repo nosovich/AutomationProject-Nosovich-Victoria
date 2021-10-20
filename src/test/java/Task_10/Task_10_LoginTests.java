@@ -15,8 +15,8 @@ public class Task_10_LoginTests extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {
-        loginPage = new LoginPage();
-        productPage = new ProductPage();
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
         loginPage.openPage();
     }
 

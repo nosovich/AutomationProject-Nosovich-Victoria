@@ -22,9 +22,9 @@ public class Task_10_CartTests extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {
-        loginPage = new LoginPage();
-        productPage = new ProductPage();
-        cartPage = new CartPage();
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
+        cartPage = new CartPage(driver);
         loginPage.openPage()
                 .loginToApplication("standard_user", "secret_sauce");
     }

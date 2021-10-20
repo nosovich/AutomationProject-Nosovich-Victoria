@@ -10,6 +10,10 @@ public class LoginPage extends BasePage {
     private By loginBtn = By.cssSelector("#login-button");
     private By errorText = By.cssSelector("[data-test=error]");
 
+    public LoginPage(WebDriver driver) {
+        super(driver);
+    }
+
     //pattern fluent chain of invocations
     // - метод возвращает ссылку на объект класса (возвращает сам себя).
     // Используем для того, чтобы в тестах получать доступ к методам класса (продлжать вызывать методы на основе предыдущих результатов, делать запись в одну строку).

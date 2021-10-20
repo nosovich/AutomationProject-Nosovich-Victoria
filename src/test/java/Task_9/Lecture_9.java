@@ -16,10 +16,10 @@ public class Lecture_9 extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {
-        loginPage = new LoginPage();
-        productPage = new ProductPage();
-        cartPage = new CartPage();
-        cheskoutPage = new CheskoutPage();
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
+        cartPage = new CartPage(driver);
+        cheskoutPage = new CheskoutPage(driver);
         loginPage.openPage();
     }
 

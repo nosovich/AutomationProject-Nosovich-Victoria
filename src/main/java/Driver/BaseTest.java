@@ -17,7 +17,7 @@ public class BaseTest {
         driver = getDriver();
     }
 
-    @AfterTest
+    @AfterMethod
     public void closeDriver() { quitDriver();}
 
 }

@@ -14,9 +14,9 @@ import static PageObject.BarMenu.LinksEnum.*;
 
 @Listeners(Listener.class)
 public class Lecture_11 extends BaseTest {
-    LoginPage loginPage = new LoginPage();
-    ProductPage productPage = new ProductPage();
-    BarMenuPage barMenuPage = new BarMenuPage();
+    LoginPage loginPage = new LoginPage(driver);
+    ProductPage productPage = new ProductPage(driver);
+    BarMenuPage barMenuPage = new BarMenuPage(driver);
 
     @BeforeClass
     public void preconditions() {

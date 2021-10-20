@@ -16,8 +16,8 @@ public class Task_10_FilterTests extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {
-        loginPage = new LoginPage();
-        productPage = new ProductPage();
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
         loginPage.openPage()
                 .loginToApplication("standard_user", "secret_sauce");
     }

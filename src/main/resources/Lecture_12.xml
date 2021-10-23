@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Welcome to the-internet">
+    <test name="Context Menu" enabled="false">
+        <classes>
+            <class name="Task_12.HomePage_Test"></class>
+            <class name="Task_12.ContextMenu_Test"></class>
+        </classes>
+    </test>
+    <test name="DynamicControls">
+        <classes>
+            <class name="Task_12.HomePage_Test"></class>
+            <class name="Task_12.DynamicControls_Test"></class>
+        </classes>
+    </test>
+</suite>

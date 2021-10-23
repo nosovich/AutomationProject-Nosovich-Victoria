@@ -1,1 +1,0 @@
-{"uuid":"3ef9e4fd-5eb6-4f6b-b309-582683e5c638","name":"Sorting of products test","children":["20c092d9-b176-4d7e-9005-cf4ad913f308"],"befores":[{"name":"setupDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1634660280700,"stop":1634660282007}],"afters":[],"start":1634660280700,"stop":1634660284773}

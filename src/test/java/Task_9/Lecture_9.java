@@ -1,10 +1,11 @@
 package Task_9;
 
 import Driver.BaseTest;
-import PageObject.CartPage;
-import PageObject.CheskoutPage;
-import PageObject.LoginPage;
-import PageObject.Product.ProductPage;
+import PageObject.Saucedemo.CartPage;
+import PageObject.Saucedemo.CheskoutPage;
+import PageObject.Saucedemo.LoginPage;
+import PageObject.Saucedemo.Product.ProductPage;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -46,22 +47,16 @@ public class Lecture_9 extends BaseTest {
     }
 
     @Test(priority = 4)
-    public void addProductToCart_Test() {
+    public void addAndRemoveProductToCart_Test() {
         loginPage.loginToApplication("standard_user", "secret_sauce");
         productPage.addBackpackToCart()
                 .navigateToCartPage();
-        cartPage.checkProduct();
+        cartPage.checkProduct()
+                .removeProduct();
+
     }
 
     @Test(priority = 5)
-    public void removeProduct_Test() {
-        loginPage.loginToApplication("standard_user", "secret_sauce");
-        productPage.addBackpackToCart()
-                .navigateToCartPage();
-        cartPage.removeProduct();
-    }
-
-    @Test(priority = 6)
     public void payment_Test() {
         loginPage.loginToApplication("standard_user", "secret_sauce");
         productPage.addBackpackToCart()

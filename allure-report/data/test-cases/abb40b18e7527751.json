@@ -1,0 +1,111 @@
+{
+  "uid" : "abb40b18e7527751",
+  "name" : "loginToApplication_Test",
+  "fullName" : "Task_10_11.Task_10_LoginTests.loginToApplication_Test",
+  "historyId" : "8d89e5c81e31aa322c6c5bbb65597476",
+  "time" : {
+    "start" : 1635344331899,
+    "stop" : 1635344332684,
+    "duration" : 785
+  },
+  "description" : "Login to application test",
+  "descriptionHtml" : "<p>Login to application test</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupDriver",
+    "time" : {
+      "start" : 1635344328910,
+      "stop" : 1635344331205,
+      "duration" : 2295
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "preconditions",
+    "time" : {
+      "start" : 1635344331250,
+      "stop" : 1635344331716,
+      "duration" : 466
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Task_10_11.Task_10_LoginTests"
+  }, {
+    "name" : "testClass",
+    "value" : "Task_10_11.Task_10_LoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginToApplication_Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Task 10"
+  }, {
+    "name" : "suite",
+    "value" : "Login tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "Task_10_11.Task_10_LoginTests"
+  }, {
+    "name" : "host",
+    "value" : "AWESOMEPC"
+  }, {
+    "name" : "thread",
+    "value" : "648@AWESOMEPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "standard_user"
+  }, {
+    "name" : "arg1",
+    "value" : "secret_sauce"
+  }, {
+    "name" : "arg2",
+    "value" : ""
+  }, {
+    "name" : "env",
+    "value" : "Sausedemo"
+  } ],
+  "links" : [ {
+    "name" : "https://www.saucedemo.com/",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "abb40b18e7527751.json",
+  "parameterValues" : [ "standard_user", "secret_sauce", "", "Sausedemo" ]
+}

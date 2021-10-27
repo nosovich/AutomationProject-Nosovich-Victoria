@@ -37,8 +37,8 @@ public class DynamicControlsObject extends BasePage {
         return this;
     }
 
-    public DynamicControlsObject verifyRemoveText(String text) {
-        wait.until(ExpectedConditions.textToBe(textBack, text));
+    public DynamicControlsObject verifyRemoveText() {
+        wait.until(ExpectedConditions.textToBe(textBack, properties.getProperty("verifyRemoveText")));
         return this;
     }
 
@@ -53,8 +53,8 @@ public class DynamicControlsObject extends BasePage {
         return this;
     }
 
-    public DynamicControlsObject verifyEnableText(String text) {
-        wait.until(ExpectedConditions.textToBe(enableText, text));
+    public DynamicControlsObject verifyEnableText() {
+        wait.until(ExpectedConditions.textToBe(enableText, properties.getProperty("verifyEnableText")));
         return this;
     }
 

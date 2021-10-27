@@ -19,7 +19,6 @@ import java.util.Comparator;
 import static Driver.DriverCreation.*;
 
 
-
 public class Listener implements ITestListener {
 
     @Override
@@ -48,6 +47,7 @@ public class Listener implements ITestListener {
             e.printStackTrace();
         }
     }
+
     @Override
     public void onFinish(ITestContext context) {
         DriverCreation.quitDriver();

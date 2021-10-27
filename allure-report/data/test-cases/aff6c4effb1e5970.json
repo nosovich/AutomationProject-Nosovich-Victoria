@@ -1,0 +1,102 @@
+{
+  "uid" : "aff6c4effb1e5970",
+  "name" : "filter_Test",
+  "fullName" : "Task_10_11.Task_10_FilterTests.filter_Test",
+  "historyId" : "2adad362d169412aaa57fc484e005fb9",
+  "time" : {
+    "start" : 1635344338527,
+    "stop" : 1635344340112,
+    "duration" : 1585
+  },
+  "description" : "Sorting of products test",
+  "descriptionHtml" : "<p>Sorting of products test</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "preconditions",
+    "time" : {
+      "start" : 1635344337614,
+      "stop" : 1635344338523,
+      "duration" : 909
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setupDriver",
+    "time" : {
+      "start" : 1635344336313,
+      "stop" : 1635344337613,
+      "duration" : 1300
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Task_10_11.Task_10_FilterTests"
+  }, {
+    "name" : "testClass",
+    "value" : "Task_10_11.Task_10_FilterTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter_Test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Task 10"
+  }, {
+    "name" : "suite",
+    "value" : "Sorting of products test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Task_10_11.Task_10_FilterTests"
+  }, {
+    "name" : "host",
+    "value" : "AWESOMEPC"
+  }, {
+    "name" : "thread",
+    "value" : "648@AWESOMEPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "env",
+    "value" : "Sausedemo"
+  } ],
+  "links" : [ {
+    "name" : "https://www.saucedemo.com/inventory",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aff6c4effb1e5970.json",
+  "parameterValues" : [ "Sausedemo" ]
+}

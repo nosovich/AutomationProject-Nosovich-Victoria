@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Keys to send should be a not null CharSequence",
+      "children" : [ {
+        "name" : "loginToApplicationLocked_Test",
+        "uid" : "39d87b59e8c1ec67",
+        "parentUid" : "8863195d2002b04b9f89a669982dae2c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1635344335227,
+          "stop" : 1635344335649,
+          "duration" : 422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "standard_user", "null", "Sausedemo" ]
+      } ],
+      "uid" : "8863195d2002b04b9f89a669982dae2c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

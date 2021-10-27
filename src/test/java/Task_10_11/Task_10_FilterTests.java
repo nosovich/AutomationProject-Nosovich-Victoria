@@ -1,7 +1,7 @@
 package Task_10_11;
 
 import Driver.BaseTest;
-import Driver.Listener;
+import TestNG.Listener;
 import PageObject.Saucedemo.Product.SortingEnum;
 import PageObject.Saucedemo.LoginPage;
 import PageObject.Saucedemo.Product.ProductPage;

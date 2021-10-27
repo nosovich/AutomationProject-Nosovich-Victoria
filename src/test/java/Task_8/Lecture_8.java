@@ -1,6 +1,6 @@
 package Task_8;
 
-import User.User;
+import Pojo.User;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.testng.annotations.Test;

@@ -1,11 +1,14 @@
 package Task_10_11;
 
 import Driver.BaseTest;
-import Driver.Listener;
+import Driver.DriverCreation;
+import TestNG.Listener;
 import PageObject.Saucedemo.Product.ProductPage;
 import PageObject.Saucedemo.CartPage;
 import PageObject.Saucedemo.CheskoutPage;
 import PageObject.Saucedemo.LoginPage;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 @Listeners(Listener.class)
@@ -27,6 +30,10 @@ public class Lecture_10_3 extends BaseTest {
     //  Аннотация Optional подставляет дефолтное значение в случае если данные не будут найдены в xml
     //  Аннотация Parameters дает возможность считать переменные из .xml файла
     //  RetryAnalyzer дает несколько попыток на выполнение теста прежде чем зафейлиться (логика прописана в классе Retry)
+
+    // Если в тесте мы искользуем Data Provider и хотим запустить его в параллели (создастя столько потоков, сколько входных данных в провайдере),
+    // то непосредственно в самом тесте необходимо создать новый драйвер и все переменные экземмпляра классов наших Pages.
+    // Иначе драйвер создастя только один раз (в BeforeMethod).
 
 
 //  Специально зафейленный тест (сейчас enabled)
@@ -50,5 +57,3 @@ public class Lecture_10_3 extends BaseTest {
         }
     }
 }
-
-

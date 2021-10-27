@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Welcome to the-internet">
+    <parameter name="env" value="Herokuapp"></parameter>
+    <test name="Context Menu" enabled="false">
+        <classes>
+            <class name="Task_12_13.HomePage_Test"></class>
+            <class name="Task_12_13.ContextMenu_Test"></class>
+        </classes>
+    </test>
+    <test name="Dynamic Controls">
+        <classes>
+            <class name="Task_12_13.HomePage_Test"></class>
+            <class name="Task_12_13.DynamicControls_Test"></class>
+        </classes>
+    </test>
+    <test name="File Uploader">
+        <classes>
+            <class name="Task_12_13.HomePage_Test"></class>
+            <class name="Task_12_13.FileUploader_Test"></class>
+        </classes>
+    </test>
+    <test name="Frame" enabled="false">
+        <classes>
+            <class name="Task_12_13.HomePage_Test"></class>
+            <class name="Task_12_13.Frames_Test"></class>
+        </classes>
+    </test>
+</suite>

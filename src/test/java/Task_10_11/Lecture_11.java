@@ -1,25 +1,31 @@
 package Task_10_11;
 
 import Driver.BaseTest;
-import Driver.Listener;
 import PageObject.Saucedemo.BarMenu.BarMenuPage;
-import PageObject.Saucedemo.Product.ProductPage;
+import PageObject.Saucedemo.CartPage;
+import PageObject.Saucedemo.CheskoutPage;
 import PageObject.Saucedemo.LoginPage;
+import PageObject.Saucedemo.Product.ProductPage;
+import TestNG.Listener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Link;
 import org.testng.annotations.*;
 
-import static PageObject.Saucedemo.BarMenu.LinksEnum.*;
+import static PageObject.Saucedemo.BarMenu.LinksEnum.Logout;
 
 @Listeners(Listener.class)
 public class Lecture_11 extends BaseTest {
-    LoginPage loginPage = new LoginPage(driver);
-    ProductPage productPage = new ProductPage(driver);
-    BarMenuPage barMenuPage = new BarMenuPage(driver);
+
+    LoginPage loginPage;
+    ProductPage productPage;
+    BarMenuPage barMenuPage;
 
     @BeforeClass
     public void preconditions() {
+        loginPage = new LoginPage(driver);
+        productPage = new ProductPage(driver);
+        barMenuPage = new BarMenuPage(driver);
         loginPage.openPage();
     }
 

@@ -21,9 +21,9 @@ public class Lecture_11 extends BaseTest {
 
     @BeforeClass
     public void preconditions() {
-        loginPage = new LoginPage(driver);
-        productPage = new ProductPage(driver);
-        barMenuPage = new BarMenuPage(driver);
+        loginPage = new LoginPage();
+        productPage = new ProductPage();
+        barMenuPage = new BarMenuPage();
         loginPage.openPage();
     }
 

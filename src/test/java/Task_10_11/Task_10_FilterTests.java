@@ -9,15 +9,14 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Link;
 import org.testng.annotations.*;
 
-@Listeners(Listener.class) //Allure report
 public class Task_10_FilterTests extends BaseTest {
     LoginPage loginPage;
     ProductPage productPage;
 
     @BeforeMethod
     public void preconditions() {
-        loginPage = new LoginPage(driver);
-        productPage = new ProductPage(driver);
+        loginPage = new LoginPage();
+        productPage = new ProductPage();
         loginPage.openPage()
                 .loginToApplicationStandard();
     }

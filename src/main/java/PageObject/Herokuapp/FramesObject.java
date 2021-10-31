@@ -18,10 +18,6 @@ public class FramesObject extends BasePage {
         return By.linkText(frame);
     }
 
-    public FramesObject(WebDriver driver) {
-        super(driver);
-    }
-
     public FramesObject verifyPageTitle(String title) {
         Assert.assertEquals(getElementText(this.title), title);
         return this;

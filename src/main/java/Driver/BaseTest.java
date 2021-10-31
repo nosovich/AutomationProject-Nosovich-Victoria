@@ -1,13 +1,12 @@
 package Driver;
 
-import Properties.PropertyReader;
 import TestNG.Listener;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
-import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 
-import static Driver.DriverCreation.*;
+import static Driver.DriverCreation.getDriver;
 
 @Listeners(Listener.class)
 public class BaseTest {

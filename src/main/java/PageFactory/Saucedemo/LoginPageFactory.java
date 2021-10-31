@@ -1,13 +1,14 @@
 package PageFactory.Saucedemo;
 
 import PageObject.BasePage;
-import PageObject.Saucedemo.LoginPage;
 import Patterns.ValueObject.SausedemoUser_VObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
+import static Driver.DriverCreation.getDriver;
+import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class LoginPageFactory extends BasePage {
 
@@ -32,8 +33,7 @@ public class LoginPageFactory extends BasePage {
     WebElement errorText;
 
     public LoginPageFactory(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
+        initElements(getDriver(), this);
     }
 
     public LoginPageFactory openPage() {

@@ -14,7 +14,6 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-@Listeners(Listener.class) //Allure report
 public class Task_10_CartTests extends BaseTest {
     LoginPage loginPage;
     ProductPage productPage;
@@ -22,9 +21,9 @@ public class Task_10_CartTests extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {
-        loginPage = new LoginPage(driver);
-        productPage = new ProductPage(driver);
-        cartPage = new CartPage(driver);
+        loginPage = new LoginPage();
+        productPage = new ProductPage();
+        cartPage = new CartPage();
         loginPage.openPage()
                 .loginToApplicationStandard();
     }

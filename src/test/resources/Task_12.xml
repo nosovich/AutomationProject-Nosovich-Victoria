@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Welcome to the-internet">
     <parameter name="env" value="Herokuapp"></parameter>
+    <parameter name="browser" value="Chrome"></parameter>
     <test name="Context Menu" enabled="false">
         <classes>
             <class name="Task_12.HomePage_Test"></class>

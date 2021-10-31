@@ -15,11 +15,6 @@ public class CheckoutPage extends BasePage {
     private By continueBtn = By.id("continue");
     private By errorText = By.cssSelector("[data-test=error]");
 
-    public CheckoutPage(WebDriver driver) {
-        super(driver);
-    }
-
-
     public void makePayment(String firstname, String lastname, String zipcode) {
         enter(this.firstName, firstname);
         enter(this.lastName, lastname);

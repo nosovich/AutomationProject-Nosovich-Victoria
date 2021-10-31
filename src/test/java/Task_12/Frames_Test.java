@@ -15,8 +15,8 @@ public class Frames_Test extends BaseTest {
 
     @BeforeClass
     public void preconditions() {
-        framesObject = new FramesObject(driver);
-        homePageObject = new HomePageObject(driver);
+        framesObject = new FramesObject();
+        homePageObject = new HomePageObject();
         homePageObject.clickLink(FRAMES);
     }
 

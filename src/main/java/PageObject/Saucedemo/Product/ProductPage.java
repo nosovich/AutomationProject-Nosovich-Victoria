@@ -23,11 +23,6 @@ public class ProductPage extends BasePage {
     private By productPrices = By.className("inventory_item_price");
     private By productSortContainer = By.className("product_sort_container");
 
-    public ProductPage(WebDriver driver) {
-        super(driver);
-    }
-
-
     public ProductPage verifyProductPage() {
         isDisplayed(title, logo, filterBtn);
         return this;

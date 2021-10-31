@@ -11,7 +11,7 @@ public class HomePage_Test extends BaseTest {
 
     @BeforeClass
     public void preconditions() {
-        homePageObject = new HomePageObject(driver);
+        homePageObject = new HomePageObject();
     }
 
     @Test

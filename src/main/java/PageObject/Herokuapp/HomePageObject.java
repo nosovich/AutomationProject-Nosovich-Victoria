@@ -14,10 +14,6 @@ public class  HomePageObject extends BasePage {
         return By.linkText(homePageLinksEnum.getLinkText());
     }
 
-    public HomePageObject(WebDriver driver) {
-        super(driver);
-    }
-
     public HomePageObject openPage() {
         open();
         return this;

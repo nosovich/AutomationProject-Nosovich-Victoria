@@ -21,9 +21,6 @@ public class FileUploaderObject extends BasePage {
     private By uploadFileName = By.xpath("//*[@id='drag-drop-upload']//span");
     private String userDir = System.getProperty("user.dir");
 
-    public FileUploaderObject(WebDriver driver) {
-        super(driver);
-    }
 
     public FileUploaderObject verifyPageTitle(String title) {
         Assert.assertEquals(getElementText(this.title), title);

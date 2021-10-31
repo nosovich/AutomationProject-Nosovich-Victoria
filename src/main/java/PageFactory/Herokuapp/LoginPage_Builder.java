@@ -2,12 +2,13 @@ package PageFactory.Herokuapp;
 
 import PageObject.BasePage;
 import Patterns.Builder.HerokuappUser_Builder;
-import Patterns.ValueObject.HerokuappUser_VObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
+import static Driver.DriverCreation.getDriver;
+import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class LoginPage_Builder extends BasePage {
     @FindBy(tagName = "h2")
@@ -26,11 +27,10 @@ public class LoginPage_Builder extends BasePage {
     WebElement statusText;
 
     public LoginPage_Builder(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
+        initElements(getDriver(), this);
     }
 
-    public LoginPage_Builder login (HerokuappUser_Builder userBuilder) {
+    public LoginPage_Builder login(HerokuappUser_Builder userBuilder) {
         userName.sendKeys(userBuilder.getUserName());
         password.sendKeys(userBuilder.getPassword());
         loginBtn.click();

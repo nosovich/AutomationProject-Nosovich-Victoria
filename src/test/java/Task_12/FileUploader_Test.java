@@ -14,8 +14,8 @@ public class FileUploader_Test extends BaseTest {
 
     @BeforeClass
     public void precondition() {
-        homePageObject = new HomePageObject(driver);
-        fileUploaderObject = new FileUploaderObject(driver);
+        homePageObject = new HomePageObject();
+        fileUploaderObject = new FileUploaderObject();
         homePageObject.clickLink(FILE_UPLOADER);
     }
 

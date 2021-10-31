@@ -1,4 +1,4 @@
-package PageFactory.Saucedemo;
+package Lombok;
 
 import PageObject.BasePage;
 import Patterns.Builder.SausedemoPerson_Builder;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 import static Driver.DriverCreation.getDriver;
 import static org.openqa.selenium.support.PageFactory.initElements;
 
-public class CheckoutPageFactory extends BasePage {
+public class CheckoutPageLombok extends BasePage{
 
     @FindBy(id = "first-name")
     WebElement firstName;
@@ -30,11 +30,11 @@ public class CheckoutPageFactory extends BasePage {
     @FindBy(css = "[data-test=error]")
     WebElement errorText;
 
-    public CheckoutPageFactory(WebDriver driver) {
+    public CheckoutPageLombok(WebDriver driver) {
         initElements(getDriver(), this);
     }
 
-    public CheckoutPageFactory verifyCheckoutPage() {
+    public CheckoutPageLombok verifyCheckoutPage() {
         firstName.isDisplayed();
         lastName.isDisplayed();
         zipCode.isDisplayed();
@@ -43,14 +43,14 @@ public class CheckoutPageFactory extends BasePage {
         return this;
     }
 
-    public void makePayment(SausedemoPerson_Builder personBuilder) {
-        firstName.sendKeys(personBuilder.getFirstName());
-        lastName.sendKeys(personBuilder.getLastName());
-        zipCode.sendKeys(personBuilder.getZipCode());
+    public void makePayment(Lombok_Person person) {
+        firstName.sendKeys(person.getFirstName());
+        lastName.sendKeys(person.getLastName());
+        zipCode.sendKeys(person.getZipCode());
         continueBtn.click();
     }
 
-    public CheckoutPageFactory checkErrorText(String expectedText) {
+    public CheckoutPageLombok checkErrorText(String expectedText) {
         Assert.assertEquals(errorText.getText(), expectedText);
         return this;
     }

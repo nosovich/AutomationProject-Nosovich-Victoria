@@ -18,10 +18,6 @@ public class DynamicControlsObject extends BasePage {
     private By enableText = By.cssSelector("#input-example>p");
     private By textBack = By.cssSelector("#checkbox-example>p");
 
-    public DynamicControlsObject(WebDriver driver) {
-        super(driver);
-    }
-
     public DynamicControlsObject verifyPageTitle() {
         Assert.assertEquals(getElementText(title), DYNAMIC_CONTROLS.getLinkText());
         return this;

@@ -21,7 +21,7 @@ public class Task_13_2_Herokuapp extends BaseTest {
 
     @BeforeMethod
     public void preconditions() {
-        homePageObject = new HomePageObject(driver);
+        homePageObject = new HomePageObject();
         loginPageBuilder = new LoginPage_Builder(driver);
         loginPageVObject = new LoginPage_VObject(driver);
         herokuappUser = new HerokuappUser_VObject();

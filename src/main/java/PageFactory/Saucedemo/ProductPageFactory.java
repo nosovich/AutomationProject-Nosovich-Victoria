@@ -6,12 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static Driver.DriverCreation.getDriver;
+import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class ProductPageFactory extends BasePage {
 
@@ -47,8 +49,7 @@ public class ProductPageFactory extends BasePage {
     WebElement productSortContainer;
 
     public ProductPageFactory(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
+        initElements(getDriver(), this);
     }
 
     public ProductPageFactory verifyProductPage() {

@@ -5,10 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import java.util.List;
+
+import static Driver.DriverCreation.getDriver;
+import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class CartPageFactory extends BasePage {
 
@@ -25,19 +27,18 @@ public class CartPageFactory extends BasePage {
     WebElement checkoutBtn;
 
     @FindBy(id = "continue-shopping")
-    WebElement coontinueShoppingBtn;
+    WebElement continueShoppingBtn;
 
     private By prodNameInCart = By.className("inventory_item_name");
 
-    public CartPageFactory verifyCartPage() {
-        coontinueShoppingBtn.isDisplayed();
-        checkoutBtn.isDisplayed();
-        return this;
+    public CartPageFactory(WebDriver driver) {
+        initElements(getDriver(), this);
     }
 
-    public CartPageFactory(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
+    public CartPageFactory verifyCartPage() {
+        continueShoppingBtn.isDisplayed();
+        checkoutBtn.isDisplayed();
+        return this;
     }
 
     public CartPageFactory removeProduct() {
@@ -60,7 +61,7 @@ public class CartPageFactory extends BasePage {
     }
 
     public void navigateToProductPage() {
-        coontinueShoppingBtn.click();
+        continueShoppingBtn.click();
     }
 }
 

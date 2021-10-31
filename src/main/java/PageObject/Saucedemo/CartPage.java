@@ -12,11 +12,7 @@ public class CartPage extends BasePage {
     private By prodPriceInCart = By.className("inventory_item_price");
     private By removeBtn = By.xpath("//button[contains(text(),'Remove')]");
     private By checkoutBtn = By.id("checkout");
-    private By coontinueShoppingBtn = By.id("continue-shopping");
-
-    public CartPage(WebDriver driver) {
-        super(driver);
-    }
+    private By continueShoppingBtn = By.id("continue-shopping");
 
 
     public CartPage checkProduct() {
@@ -42,7 +38,7 @@ public class CartPage extends BasePage {
 
 
     public void navigateToProductPage() {
-        click(coontinueShoppingBtn);
+        click(continueShoppingBtn);
     }
 }
 

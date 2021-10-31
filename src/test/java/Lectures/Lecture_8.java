@@ -1,4 +1,4 @@
-package Task_8;
+package Lectures;
 
 import Pojo.User;
 import com.google.gson.Gson;

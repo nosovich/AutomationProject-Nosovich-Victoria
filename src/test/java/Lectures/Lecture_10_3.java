@@ -1,14 +1,11 @@
-package Task_10_11;
+package Lectures;
 
 import Driver.BaseTest;
-import Driver.DriverCreation;
 import TestNG.Listener;
 import PageObject.Saucedemo.Product.ProductPage;
 import PageObject.Saucedemo.CartPage;
-import PageObject.Saucedemo.CheskoutPage;
+import PageObject.Saucedemo.CheckoutPage;
 import PageObject.Saucedemo.LoginPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 @Listeners(Listener.class)
@@ -16,14 +13,14 @@ public class Lecture_10_3 extends BaseTest {
     LoginPage loginPage;
     ProductPage productPage;
     CartPage cartPage;
-    CheskoutPage cheskoutPage;
+    CheckoutPage checkoutPage;
 
     @BeforeMethod
     public void preconditions() {
         loginPage = new LoginPage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
-        cheskoutPage = new CheskoutPage(driver);
+        checkoutPage = new CheckoutPage(driver);
         loginPage.openPage();
     }
 

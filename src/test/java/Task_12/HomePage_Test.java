@@ -1,4 +1,4 @@
-package Task_12_13;
+package Task_12;
 
 import Driver.BaseTest;
 import PageObject.Herokuapp.HomePageObject;

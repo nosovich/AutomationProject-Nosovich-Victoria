@@ -26,7 +26,7 @@ public class Task_10_CartTests extends BaseTest {
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
         loginPage.openPage()
-                .loginToApplication("standard_user", "secret_sauce");
+                .loginToApplicationStandard();
     }
 
     // Написать тесты на добавления/удаление товаров в корзину (invocationCount)

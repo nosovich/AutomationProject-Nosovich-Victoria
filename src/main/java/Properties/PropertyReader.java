@@ -9,6 +9,7 @@ public class PropertyReader {
     public static Properties getProperties() {
         return properties;
     }
+
     public void setProperties(String name) {
         properties = new Properties();
         try {

@@ -1,9 +1,7 @@
-package Task_10_11;
+package Lectures;
 
 import Driver.BaseTest;
 import PageObject.Saucedemo.BarMenu.BarMenuPage;
-import PageObject.Saucedemo.CartPage;
-import PageObject.Saucedemo.CheskoutPage;
 import PageObject.Saucedemo.LoginPage;
 import PageObject.Saucedemo.Product.ProductPage;
 import TestNG.Listener;

@@ -2,25 +2,24 @@ package Task_9;
 
 import Driver.BaseTest;
 import PageObject.Saucedemo.CartPage;
-import PageObject.Saucedemo.CheskoutPage;
+import PageObject.Saucedemo.CheckoutPage;
 import PageObject.Saucedemo.LoginPage;
 import PageObject.Saucedemo.Product.ProductPage;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Lecture_9 extends BaseTest {
+public class Task_9 extends BaseTest {
     LoginPage loginPage;
     ProductPage productPage;
     CartPage cartPage;
-    CheskoutPage cheskoutPage;
+    CheckoutPage checkoutPage;
 
     @BeforeMethod
     public void preconditions() {
         loginPage = new LoginPage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
-        cheskoutPage = new CheskoutPage(driver);
+        checkoutPage = new CheckoutPage(driver);
         loginPage.openPage();
     }
 
@@ -62,6 +61,6 @@ public class Lecture_9 extends BaseTest {
         productPage.addBackpackToCart()
                 .navigateToCartPage();
         cartPage.navigateToCheckoutPage();
-        cheskoutPage.makePayment("Vika", "Nos", "12345");
+        checkoutPage.makePayment("Vika", "Nos", "12345");
     }
 }

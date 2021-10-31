@@ -1,8 +1,7 @@
-package Task_12_13;
+package Task_12;
 
 import Driver.BaseTest;
 import PageObject.Herokuapp.FileUploaderObject;
-import PageObject.Herokuapp.HomePageLinksEnum;
 import PageObject.Herokuapp.HomePageObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

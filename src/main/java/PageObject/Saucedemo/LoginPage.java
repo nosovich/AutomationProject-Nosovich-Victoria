@@ -30,13 +30,13 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public LoginPage enterUsername(String username) {
-        enter(this.username, username);
+    public LoginPage enterStandardUsername() {
+        enter(this.username, properties.getProperty("username"));
         return this;
     }
 
-    public LoginPage enterPassword(String password) {
-        enter(this.password, password);
+    public LoginPage enterStandardPassword() {
+        enter(this.password, properties.getProperty("password"));
         return this;
     }
 
@@ -48,6 +48,13 @@ public class LoginPage extends BasePage {
     public LoginPage loginToApplication(String username, String password) {
         enter(this.username, username);
         enter(this.password, password);
+        click(this.loginBtn);
+        return this;
+    }
+
+    public LoginPage loginToApplicationStandard() {
+        enter(this.username, properties.getProperty("username"));
+        enter(this.password, properties.getProperty("password"));
         click(this.loginBtn);
         return this;
     }

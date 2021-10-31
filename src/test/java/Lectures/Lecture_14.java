@@ -1,3 +1,5 @@
+package Lectures;
+
 import Compare.Person;
 import Compare.Sort;
 import org.testng.annotations.Test;

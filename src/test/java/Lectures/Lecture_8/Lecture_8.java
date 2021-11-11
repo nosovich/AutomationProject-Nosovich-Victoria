@@ -1,4 +1,4 @@
-package Lectures;
+package Lectures.Lecture_8;
 
 import Pojo.User;
 import com.google.gson.Gson;
@@ -23,6 +23,7 @@ public class Lecture_8 {
         System.out.println(jsonObject);
     }
 
+    //POJO
     @Test
     public void test2() throws IOException {
         Gson gson = new Gson();
@@ -34,7 +35,6 @@ public class Lecture_8 {
         System.out.println(user.getContents().get(1).getProductName());
     }
 
-    //POJO
     @Test
     public void test3() throws IOException {
         Gson gson = new Gson();

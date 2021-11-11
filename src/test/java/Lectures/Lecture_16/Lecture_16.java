@@ -29,7 +29,7 @@ public class Lecture_16 {
 
    @Test
     public void test3() {
-        Pet pet = new Pet.PetBuilder().name("Charli").age(10).type("Pug").build();
+        Pet pet = Pet.builder().name("Charli").age(10).type("Pug").build();
         log.info(pet);
    }
 }

@@ -7,7 +7,6 @@ import Lombok.Lombok_Person;
 import Lombok.Lombok_UserVObject;
 import PageFactory.Saucedemo.CartPageFactory;
 import PageFactory.Saucedemo.ProductPageFactory;
-import Patterns.Builder.SausedemoPerson_Builder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -43,8 +42,8 @@ public class Task_14 extends BaseTest {
     @Test(priority = 2)
     public void payment_Test() {
         person = Lombok_Person.builder()
-                .firstName("Bla")
-                .lastName("BlaBla")
+                .firstName("Vasia")
+                .lastName("Pupkin")
                 .zipCode("12345")
                 .build();
         productPageFactory.addProductToCart()

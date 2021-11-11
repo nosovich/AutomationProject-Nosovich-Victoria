@@ -37,7 +37,8 @@ public class Listener implements ITestListener {
     public void onStart(ITestContext context) {
         PropertyReader propertyReader = new PropertyReader();
         propertyReader.setProperties(context.getSuite().getParameter("env"));
-        DriverCreation.setDriver(context.getSuite().getParameter("browser") == null ? "Chrome" : context.getSuite().getParameter("browser"));
+        PropertyReader.getProperties().containsKey("chrome");
+        DriverCreation.setDriver();
         Path path = Paths.get("allure-results");
         try {
             if (Files.exists(path)) {

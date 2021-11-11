@@ -45,7 +45,8 @@ public class Task_10_LoginTests extends BaseTest {
         }
     }
 
-    //  Специально зафейленный тест (сейчас enabled = false), чтобы увидеть скрины зафейленного теста в Allure-report
+    //  Специально зафейленный тест (сейчас enabled = false), чтобы увидеть скрины зафейленного теста в Allure-report.
+    //  Cкрин зафейленного теста лежит в папке Files.
     @Test(priority = 2, enabled = false)
     @Description("Login to application test (specially failed)")
     @Link("https://www.saucedemo.com/")

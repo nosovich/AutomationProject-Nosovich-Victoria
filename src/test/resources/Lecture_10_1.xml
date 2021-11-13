@@ -7,19 +7,19 @@
         <parameter name="password" value="secret_sauce"></parameter>
         <parameter name="error" value="Epic sadface: Sorry, this user has been locked out."></parameter>
         <classes>
-            <class name="Lectures.Lecture_10_3"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_3"></class>
         </classes>
     </test>
     <test name="Standard user">
         <classes>
-            <class name="Lectures.Lecture_10_3"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_3"></class>
         </classes>
     </test>
     <test name="Problem user">
         <parameter name="username" value="problem_user"></parameter>
         <parameter name="password" value="secret_sauce"></parameter>
         <classes>
-            <class name="Lectures.Lecture_10_3"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_3"></class>
         </classes>
     </test>
     <test name="Empty fields">
@@ -27,7 +27,7 @@
         <parameter name="password" value=""></parameter>
         <parameter name="error" value="Epic sadface: Username is required"></parameter>
         <classes>
-            <class name="Lectures.Lecture_10_3"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_3"></class>
         </classes>
     </test>
 </suite>

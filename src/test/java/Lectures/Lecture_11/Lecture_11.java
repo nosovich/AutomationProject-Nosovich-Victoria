@@ -1,4 +1,4 @@
-package Lectures;
+package Lectures.Lecture_11;
 
 import Driver.BaseTest;
 import PageObject.Saucedemo.BarMenu.BarMenuPage;

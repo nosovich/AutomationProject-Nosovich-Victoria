@@ -40,7 +40,6 @@ public class DriverCreation {
         }
     }
 
-//   Singleton pattern
     public static WebDriver getDriver() {
         return driver.get();
     }

@@ -8,19 +8,19 @@
             </run>
         </groups>
         <classes>
-            <class name="Lectures.Lecture_10_1"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_1"></class>
         </classes>
     </test>
     <test name="Second test">
         <classes>
-            <class name="Lectures.Lecture_10_2"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_2"></class>
         </classes>
     </test>
     <test name="Third test" enabled="false">
         <parameter name="username" value="locked_out_user"></parameter>
         <parameter name="password" value="secret_sauce"></parameter>
         <classes>
-            <class name="Lectures.Lecture_10_3"></class>
+            <class name="Lectures.Lecture_10.Lecture_10_3"></class>
         </classes>
     </test>
 </suite>

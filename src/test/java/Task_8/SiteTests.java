@@ -1,4 +1,4 @@
-package Task_8.task_8;
+package Task_8;
 
 import Driver.BaseTest;
 import org.openqa.selenium.By;

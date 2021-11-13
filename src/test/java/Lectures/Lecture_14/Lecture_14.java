@@ -1,4 +1,4 @@
-package Lectures;
+package Lectures.Lecture_14;
 
 import Compare.Person;
 import Compare.Sort;

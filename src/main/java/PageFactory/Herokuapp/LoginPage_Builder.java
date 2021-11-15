@@ -38,7 +38,7 @@ public class LoginPage_Builder extends BasePage {
     }
 
     public LoginPage_Builder checkStatusText(HerokuappUser_Builder userBuilder) {
-        Assert.assertEquals(statusText.getText(), userBuilder.getStatusText());
+        Assert.assertTrue(statusText.getText().contains(userBuilder.getStatusText()));
         return this;
     }
 }

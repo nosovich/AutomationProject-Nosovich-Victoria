@@ -39,7 +39,7 @@ public class LoginPage_VObject extends BasePage {
     }
 
     public LoginPage_VObject checkStatusText(HerokuappUser_VObject user) {
-        Assert.assertEquals(statusText.getText(), user.getStatusText());
+        Assert.assertTrue(statusText.getText().contains(user.getStatusText()));
         return this;
     }
 }

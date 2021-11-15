@@ -33,7 +33,7 @@ public class Task_13_2_Herokuapp extends BaseTest {
     public void loginToAppPositive_Test() {
         herokuappUser.setUserName("tomsmith");
         herokuappUser.setPassword("SuperSecretPassword!");
-        herokuappUser.setStatusText("You logged into a secure area!\n" + "×");
+        herokuappUser.setStatusText("You logged into a secure area!");
         loginPageVObject.login(herokuappUser);
     }
 
@@ -42,7 +42,7 @@ public class Task_13_2_Herokuapp extends BaseTest {
         userBuilder = new HerokuappUser_Builder.Builder()
                 .withUserName("agent 007")
                 .withPassword("SuperSecretPassword!")
-                .withStatusText("Your username is invalid!\n" + "×")
+                .withStatusText("Your username is invalid!")
                 .build();
         loginPageBuilder.login(userBuilder)
                 .checkStatusText(userBuilder);

@@ -13,6 +13,7 @@ public class PropertyReader {
     public void setProperties(String name) {
         properties = new Properties();
         try {
+            System.out.print("TRYING TO LOAD FILE" + name);
             properties.load(PropertyReader.class.getClassLoader().getResourceAsStream(name + ".properties"));
 
         } catch (IOException e) {

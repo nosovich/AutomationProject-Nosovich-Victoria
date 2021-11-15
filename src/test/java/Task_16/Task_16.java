@@ -56,7 +56,7 @@ public class Task_16 extends BaseTestSelenide {
 
     @Test(dataProvider = "registration data")
     @Description("Checking registration of an existing user and registration with empty fields")
-    public void registration_Test1(String firstName, String surName, int gender, int birth, String email, String password, String confirmPassword, String error) {
+    public void registration_Test(String firstName, String surName, int gender, int birth, String email, String password, String confirmPassword, String error) {
         String errorMes = "Error: Please complete all fields correctly";
         get(HomePage.class)
                 .goToLoginPage();

@@ -20,24 +20,16 @@ import static Driver.DriverCreation.getDriver;
 
 
 public class Listener implements ITestListener {
-
-    @Override
-    public void onTestStart(ITestResult result) {
-        System.out.println(result.getName());
-    }
-
     @Override
     public void onTestFailure(ITestResult result) {
         byte[] file = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
         saveScreenshots(file);
-        //Скриншот fail тестов
     }
 
     @Override
     public void onStart(ITestContext context) {
         PropertyReader propertyReader = new PropertyReader();
-        propertyReader.setProperties(context.getSuite().getParameter("env"));
-        PropertyReader.getProperties().containsKey("chrome");
+        propertyReader.setProperties(context.getSuite().getParameter("env") == null ? System.getProperties().getProperty("env") : context.getSuite().getParameter("env"));
         DriverCreation.setDriver();
         Path path = Paths.get("allure-results");
         try {

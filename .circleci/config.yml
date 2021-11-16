@@ -21,7 +21,7 @@ jobs:
 
       - run:
           name: Running tests
-          command: mvn clean test -Dsuite="src/test/resources/Task_15.xml"
+          command: mvn clean test -Dsuite="src/test/resources/Task_14.xml"
       - run:
           name: Generate allure report
           command: mvn allure:report

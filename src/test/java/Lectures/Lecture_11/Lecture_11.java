@@ -4,7 +4,7 @@ import Driver.BaseTest;
 import PageObject.Saucedemo.BarMenu.BarMenuPage;
 import PageObject.Saucedemo.LoginPage;
 import PageObject.Saucedemo.Product.ProductPage;
-import TestNG.Listener;
+import TestNG.ListenerSelenium;
 import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Link;
@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 
 import static PageObject.Saucedemo.BarMenu.LinksEnum.Logout;
 
-@Listeners(Listener.class)
+@Listeners(ListenerSelenium.class)
 public class Lecture_11 extends BaseTest {
 
     LoginPage loginPage;

@@ -1,14 +1,14 @@
 package Lectures.Lecture_10;
 
 import Driver.BaseTest;
-import TestNG.Listener;
+import TestNG.ListenerSelenium;
 import PageObject.Saucedemo.Product.ProductPage;
 import PageObject.Saucedemo.CartPage;
 import PageObject.Saucedemo.CheckoutPage;
 import PageObject.Saucedemo.LoginPage;
 import org.testng.annotations.*;
 
-@Listeners(Listener.class)
+@Listeners(ListenerSelenium.class)
 public class Lecture_10_3 extends BaseTest {
     LoginPage loginPage;
     ProductPage productPage;

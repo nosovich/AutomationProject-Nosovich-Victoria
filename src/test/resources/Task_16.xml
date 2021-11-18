@@ -3,7 +3,7 @@
 <suite name="MOODPANDA">
     <test name="Moodpanda test">
         <classes>
-            <class name="Task_16.Task_16"/>
+            <class name="Tasks.Task_16.Task_16"/>
         </classes>
     </test>
 </suite>

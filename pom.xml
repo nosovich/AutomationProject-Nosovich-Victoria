@@ -20,7 +20,8 @@
         <webdrivermanager.version>5.0.3</webdrivermanager.version>
         <restAssured.version>4.4.0</restAssured.version>
         <selenide.version>5.25.0</selenide.version>
-        <suite>src/test/resources/Task_15.xml</suite>
+        <cucumber.version>4.7.1</cucumber.version>
+        <suite>src/test/resources/Tasks.Task_15.xml</suite>
     </properties>
     <build>
         <plugins>
@@ -99,6 +100,21 @@
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
     </dependencies>
 </project>

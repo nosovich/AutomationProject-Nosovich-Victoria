@@ -4,7 +4,7 @@
     <parameter name="env" value="Sausedemo"></parameter>
     <test name="Sausedemo test">
         <classes>
-            <class name="Task_9.Task_9"></class>
+            <class name="Tasks.Task_9.Task_9"></class>
         </classes>
     </test>
 </suite>

@@ -5,26 +5,26 @@
     <parameter name="browser" value="Chrome"></parameter>
     <test name="Context Menu" enabled="false">
         <classes>
-            <class name="Task_12.HomePage_Test"></class>
-            <class name="Task_12.ContextMenu_Test"></class>
+            <class name="Tasks.Task_12.HomePage_Test"></class>
+            <class name="Tasks.Task_12.ContextMenu_Test"></class>
         </classes>
     </test>
     <test name="Dynamic Controls">
         <classes>
-            <class name="Task_12.HomePage_Test"></class>
-            <class name="Task_12.DynamicControls_Test"></class>
+            <class name="Tasks.Task_12.HomePage_Test"></class>
+            <class name="Tasks.Task_12.DynamicControls_Test"></class>
         </classes>
     </test>
     <test name="File Uploader">
         <classes>
-            <class name="Task_12.HomePage_Test"></class>
-            <class name="Task_12.FileUploader_Test"></class>
+            <class name="Tasks.Task_12.HomePage_Test"></class>
+            <class name="Tasks.Task_12.FileUploader_Test"></class>
         </classes>
     </test>
     <test name="Frame" enabled="false">
         <classes>
-            <class name="Task_12.HomePage_Test"></class>
-            <class name="Task_12.Frames_Test"></class>
+            <class name="Tasks.Task_12.HomePage_Test"></class>
+            <class name="Tasks.Task_12.Frames_Test"></class>
         </classes>
     </test>
 </suite>

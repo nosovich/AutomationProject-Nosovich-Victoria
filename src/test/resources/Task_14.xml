@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Task_14">
+<suite name="Tasks.Task_14">
     <parameter name="env" value="Sausedemo"></parameter>
     <test name="Sausedemo tests">
         <classes>
-            <class name="Task_14.Task_14"></class>
+            <class name="Tasks.Task_14.Task_14"></class>
         </classes>
     </test>
 </suite>

@@ -11,8 +11,8 @@ import static com.codeborne.selenide.WebDriverRunner.driver;
 @Listeners(ListenerSelenide.class)
 public class BaseTestSelenide {
 
-    public <T> T get(Class<T> pageObjectClassClass) {
-        return driver().hasWebDriverStarted() ? page(pageObjectClassClass): open("https://moodpanda.com/", pageObjectClassClass);
+    public <PageObjectClass> PageObjectClass get(Class<PageObjectClass> pageObjectClassClass) {
+        return driver().hasWebDriverStarted() ? page(pageObjectClassClass) : open(PropertyReader.getProperties().getProperty("url"), pageObjectClassClass);
     }
 
     public <PageObjectClass> PageObjectClass get(Class<PageObjectClass> pageObjectClassClass, String env) {

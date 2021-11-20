@@ -3,6 +3,7 @@ package TestNG;
 import Driver.DriverCreation;
 import Driver.SelenideConfigurations;
 import Properties.PropertyReader;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -16,8 +17,7 @@ import static Driver.DriverCreation.getDriver;
 public class ListenerSelenide implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
-        byte[] file = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
-        saveScreenshots(file);
+        byte[] file = ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
     @Override
@@ -25,11 +25,6 @@ public class ListenerSelenide implements ITestListener {
         PropertyReader propertyReader = new PropertyReader();
         propertyReader.setProperties(context.getSuite().getParameter("env") == null ? System.getProperties().getProperty("env") : context.getSuite().getParameter("env"));
         new SelenideConfigurations(propertyReader);
-    }
-
-    @Override
-    public void onFinish(ITestContext context) {
-        DriverCreation.quitDriver();
     }
 
     @Attachment(value = "Screenshots", type = "image/png")

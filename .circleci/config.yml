@@ -40,5 +40,9 @@ workflows:
     triggers:
       - schedule:
           cron: "1 4,8,12 * * *"
+          filters:
+            branches:
+              only:
+                - Task10-20
     jobs:
       - ui-tests

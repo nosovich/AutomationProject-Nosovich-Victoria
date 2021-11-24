@@ -1,6 +1,7 @@
 #AutomationProject-Nosovich-Victoria**
 
 ##View available library updates - `mvn versions:display-dependency-updates`
+
 `[INFO] The following dependencies in Dependencies have newer versions:
 [INFO]   com.codeborne:selenide ............................... 5.25.0 -> 6.0.3
 [INFO]   org.seleniumhq.selenium:selenium-java .............. 3.141.59 -> 4.0.0
@@ -18,6 +19,7 @@
 
 
 ##Running tests from command line using mvn clean test - `mvn clean test -Dtest=Task_15`
+
 `[INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
@@ -41,7 +43,9 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 
 
 ##Running testng.xml file from command line using mvn clean test:
+
 ###1. Add to testng.xml file in pom.xml file (will make it default)
+
 `    <properties>
         <suite>src/test/resources/Task_16src/test/resources/Task_15.xml</suite>
     </properties>
@@ -59,7 +63,9 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
             </plugin>
         </plugins>
     </build>`
+    
 ###2.Run mvn clean test with testng.xml file -DsuiteXmlFile = yourDefault.xml
+
 `[INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------

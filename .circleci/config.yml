@@ -43,6 +43,6 @@ workflows:
           filters:
             branches:
               only:
-                - Task10-20
+                - master
     jobs:
       - ui-tests

@@ -4,7 +4,7 @@
     <parameter name="env" value="Herokuapp"></parameter>
     <test name="Herokuapp tests">
         <classes>
-            <class name="Tasks.Task_13.Task_13_2_Herokuapp"></class>
+            <class name="Tasks.Task_13_Patterns.Task_13_2_Herokuapp"></class>
         </classes>
     </test>
 </suite>

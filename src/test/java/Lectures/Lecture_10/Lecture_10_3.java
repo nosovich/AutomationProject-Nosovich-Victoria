@@ -33,7 +33,7 @@ public class Lecture_10_3 extends BaseTest {
     // Иначе драйвер создастя только один раз (в BeforeMethod).
 
 
-//  Специально зафейленный тест (сейчас enabled)
+//  Специально зафейленный тест (сейчас enabled = false)
 //    @Parameters({"username", "password"})
 //    @Test(priority = 2, retryAnalyzer = Retry.class, enabled = false)
 //    public void loginToApplicationLocked_Test(@Optional("standard_user") String username, @Optional("secret_sauce") String password) {

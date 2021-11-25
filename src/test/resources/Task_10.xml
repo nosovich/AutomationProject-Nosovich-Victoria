@@ -4,17 +4,17 @@
     <parameter name="env" value="Sausedemo"></parameter>
     <test name="Login tests">
         <classes>
-            <class name="Tasks.Task_10_11.Task_10_LoginTests"></class>
+            <class name="Tasks.Task_10_11_TestNG_Allure.Task_10_LoginTests"></class>
         </classes>
     </test>
     <test name="Sorting of products test">
         <classes>
-            <class name="Tasks.Task_10_11.Task_10_FilterTests"></class>
+            <class name="Tasks.Task_10_11_TestNG_Allure.Task_10_FilterTests"></class>
         </classes>
     </test>
     <test name="Adding and removing items to cart test">
         <classes>
-            <class name="Tasks.Task_10_11.Task_10_CartTests"></class>
+            <class name="Tasks.Task_10_11_TestNG_Allure.Task_10_CartTests"></class>
         </classes>
     </test>
 </suite>

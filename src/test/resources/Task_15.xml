@@ -3,7 +3,7 @@
 <suite name="REST">
     <test name="RestAPI">
         <classes>
-            <class name="Tasks.Task_15.Task_15"/>
+            <class name="Tasks.Task_15_RestAPI.Task_15"/>
         </classes>
     </test>
 </suite>

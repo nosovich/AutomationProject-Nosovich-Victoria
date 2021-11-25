@@ -7,7 +7,7 @@
     </listeners>
     <test name="Star test">
         <classes>
-            <class name="Tasks.Task_20.CucumberTest"/>
+            <class name="Tasks.Task_20_Cucumber.CucumberTest"/>
         </classes>
     </test>
 </suite>

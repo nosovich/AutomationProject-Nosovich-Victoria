@@ -21,7 +21,7 @@
         <restAssured.version>4.4.0</restAssured.version>
         <selenide.version>5.25.0</selenide.version>
         <cucumber.version>4.7.1</cucumber.version>
-        <suite>src/test/resources/Tasks.Task_15.xml</suite>
+        <suite>src/test/resources/Tasks.Task_15_RestAPI.xml</suite>
     </properties>
     <build>
         <plugins>

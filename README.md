@@ -17,15 +17,15 @@
 
 
 
-##Running tests from command line using mvn clean test - `mvn clean test -Dtest=Tasks.Task_15`
+##Running tests from command line using mvn clean test - `mvn clean test -Dtest=Tasks.Task_15_RestAPI`
 `[INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running Tasks.Task_15.Tasks.Task_15
+[INFO] Running Tasks.Task_15_RestAPI.Tasks.Task_15_RestAPI
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.311 s - in Tasks.Task_15.Tasks.Task_15
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.311 s - in Tasks.Task_15_RestAPI.Tasks.Task_15_RestAPI
 [INFO]
 [INFO] Results:
 [INFO]
@@ -43,7 +43,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 ##Running testng.xml file from command line using mvn clean test:
 ###1. Add to testng.xml file in pom.xml file (will make it default)
 `    <properties>
-        <suite>src/test/resources/Task_16src/test/resources/Tasks.Task_15.xml</suite>
+        <suite>src/test/resources/Task_16src/test/resources/Tasks.Task_15_RestAPI.xml</suite>
     </properties>
     <build>
         <plugins>
@@ -59,7 +59,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
             </plugin>
         </plugins>
     </build>`
-###2.Run mvn clean test with testng.xml file -DsuiteXmlFile = yourDefault.xml
+###2.Run mvn clean test with testng.xml file. mvn clean test -DsuiteXmlFile = yourDefault.xml
 `[INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------

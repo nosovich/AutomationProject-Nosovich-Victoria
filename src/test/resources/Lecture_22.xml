@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MOODPANDA" parallel="tests">
+    <parameter name="env" value="MoodPanda"/>
+    <listeners>
+        <listener class-name="TestNG.ListenerSelenide"/>
+    </listeners>
+    <test name="Base test">
+        <classes>
+            <class name="Lectures.Lecture_22.Lecture_22"/>
+        </classes>
+    </test>
+</suite>

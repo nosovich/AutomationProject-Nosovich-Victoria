@@ -14,9 +14,8 @@ public class TestimonialsPage {
  // Тот же самый элемент, только описание без аннотации @FindBy
     SelenideElement testimonialsTxt1 = $(".row.text-center h1");
 
-    public TestimonialsPage verifyText() {
-        testimonialsTxt.shouldBe(matchText("MOBILE & WEB APP"));
+    public TestimonialsPage verifyContentText(String text) {
+        testimonialsTxt.shouldBe(matchText(text));
         return this;
     }
-
 }

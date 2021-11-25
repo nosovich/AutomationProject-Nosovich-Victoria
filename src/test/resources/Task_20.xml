@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Booking" >
+    <parameter name="env" value="Booking"/>
+    <listeners>
+        <listener class-name="TestNG.ListenerSelenide"/>
+    </listeners>
+    <test name="Star test">
+        <classes>
+            <class name="Tasks.Task_20_Cucumber.CucumberTest"/>
+        </classes>
+    </test>
+</suite>

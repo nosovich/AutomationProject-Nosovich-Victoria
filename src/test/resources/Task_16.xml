@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="MOODPANDA">
+    <parameter name="env" value="MoodPanda"></parameter>
     <test name="Moodpanda test">
         <classes>
-            <class name="Task_16.Task_16"/>
+            <class name="Tasks.Task_16_Selenide.Task_16"/>
         </classes>
     </test>
 </suite>

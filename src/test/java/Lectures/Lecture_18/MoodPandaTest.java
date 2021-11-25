@@ -16,18 +16,17 @@ public class MoodPandaTest extends BaseTestSelenide {
         open("https://moodpanda.com/");
         page(HomePage.class)
                 .checkBrandNameSubtext()
-                .clickScrollDownBtn();
-        page(TestimonialsPage.class)
-                .verifyText();
+                .checkImage();
     }
-// Тот же самый тест, но методы open и page объединены в один метод get с помощью дженериков(см. BaseTestSelenide)
+// Тут методы open и page объединены в один метод get с помощью дженериков(см. BaseTestSelenide)
     @Test
     public void verifyHomePage_Test1() {
         get(HomePage.class)
                 .checkBrandNameSubtext()
                 .clickScrollDownBtn();
         get(TestimonialsPage.class)
-                .verifyText();
+                .verifyContentText("FOR MOOD-TRACKING")
+                .verifyContentText("MOBILE & WEB APP");
     }
 
     @AfterMethod

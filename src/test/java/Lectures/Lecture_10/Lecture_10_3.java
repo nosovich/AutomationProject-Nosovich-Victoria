@@ -1,14 +1,14 @@
 package Lectures.Lecture_10;
 
 import Driver.BaseTest;
-import TestNG.Listener;
+import TestNG.ListenerSelenium;
 import PageObject.Saucedemo.Product.ProductPage;
 import PageObject.Saucedemo.CartPage;
 import PageObject.Saucedemo.CheckoutPage;
 import PageObject.Saucedemo.LoginPage;
 import org.testng.annotations.*;
 
-@Listeners(Listener.class)
+@Listeners(ListenerSelenium.class)
 public class Lecture_10_3 extends BaseTest {
     LoginPage loginPage;
     ProductPage productPage;
@@ -33,7 +33,7 @@ public class Lecture_10_3 extends BaseTest {
     // Иначе драйвер создастя только один раз (в BeforeMethod).
 
 
-//  Специально зафейленный тест (сейчас enabled)
+//  Специально зафейленный тест (сейчас enabled = false)
 //    @Parameters({"username", "password"})
 //    @Test(priority = 2, retryAnalyzer = Retry.class, enabled = false)
 //    public void loginToApplicationLocked_Test(@Optional("standard_user") String username, @Optional("secret_sauce") String password) {

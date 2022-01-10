@@ -20,6 +20,7 @@
         <webdrivermanager.version>5.0.3</webdrivermanager.version>
         <restAssured.version>4.4.0</restAssured.version>
         <selenide.version>5.25.0</selenide.version>
+        <mysql.version>8.0.27</mysql.version>
         <cucumber.version>4.7.1</cucumber.version>
         <suite>src/test/resources/Tasks.Task_15_RestAPI.xml</suite>
     </properties>
@@ -100,6 +101,11 @@
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
